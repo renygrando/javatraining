@@ -6,7 +6,7 @@ public class Fluxo {
 		System.out.println("Ini do main");
 		try {
 			metodo1();
-		} catch(ArithmeticException | NullPointerException ex) {
+		} catch(Exception ex) {
 			String msg = ex.getMessage();
 			System.out.println("Exception " + msg);
 			ex.printStackTrace();
@@ -25,9 +25,6 @@ public class Fluxo {
 		System.out.println("Ini do método 2");
 		for(int i = 1; i <=5; i++) {
 			System.out.println(i);
-			//int a = i / 0;
-			Conta c = null;
-			c.deposita();
 		}
 		System.out.println("Fim do método 2");
 
